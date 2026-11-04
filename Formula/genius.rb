@@ -5,20 +5,20 @@
 class Genius < Formula
   desc "Command-line client for Genius, the Jira ticket analysis service"
   homepage "https://github.com/weka/genius-api"
-  version "0.43.17"
+  version "0.43.18"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.17/genius_0.43.17_darwin_amd64.tar.gz"
-      sha256 "4f82b43e68fd9cc6f0e0fb96ac8c37ca23ed375092bc0a769c5d93454620db65"
+      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.18/genius_0.43.18_darwin_amd64.tar.gz"
+      sha256 "edb4bf05d0d3b8f892953485bb220335d241a8bd6d3a8f107efe3918b321d3ca"
 
       define_method(:install) do
         bin.install "genius"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.17/genius_0.43.17_darwin_arm64.tar.gz"
-      sha256 "39cb767b38578dd81a56cbb83877dde1bcfcf3e211835a4f42c6b95b639f46d6"
+      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.18/genius_0.43.18_darwin_arm64.tar.gz"
+      sha256 "186d4432d2e6a4a884dc576bda7c6eddb7f4d9d17e8394efeef5e8e631b90871"
 
       define_method(:install) do
         bin.install "genius"
@@ -28,15 +28,15 @@ class Genius < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.17/genius_0.43.17_linux_amd64.tar.gz"
-      sha256 "e19669a9b73a5d0e3e4edbd3d873dcee02e9f2443170dfb66b60f2aae244e947"
+      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.18/genius_0.43.18_linux_amd64.tar.gz"
+      sha256 "085c833ae24cb8b5349df366880f92e46e7cd03ed49178e02d3300db257b7bdc"
       define_method(:install) do
         bin.install "genius"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.17/genius_0.43.17_linux_arm64.tar.gz"
-      sha256 "1162f83dccfe5ec7c10c6dd2326c11c6a609fd7ec21414717afa375d670affe0"
+      url "https://github.com/weka/homebrew-genius/releases/download/v0.43.18/genius_0.43.18_linux_arm64.tar.gz"
+      sha256 "522d135539d356df8e44abd82cc8525570d5c92430f6b7b20ccda43973d214bd"
       define_method(:install) do
         bin.install "genius"
       end
